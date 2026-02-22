@@ -3,7 +3,7 @@ import xgboost as xgb
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
-data = pd.read_csv("processed_dataset.csv")
+data = pd.read_csv("../data/processed_dataset.csv")
 
 features = ["population", "traffic", "facilities", "centrality"]
 X = data[features]
@@ -27,5 +27,5 @@ print("R2 score:", r2)
 
 xgb.plot_importance(model)
 plt.title("Feature importance")
-plt.savefig("feature_importance.png", dpi=300)
+plt.savefig("../outputs/feature_importance.png", dpi=300)
 plt.show()
