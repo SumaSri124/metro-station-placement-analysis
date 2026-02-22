@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
-data = pd.read_csv("city_dataset.csv")
+data = pd.read_csv("../data/city_dataset.csv")
 
 center_x = 5
 center_y = 5
@@ -28,6 +28,6 @@ data["score"] = (
     0.15 * data["centrality"]
 )
 
-data.to_csv("processed_dataset.csv", index=False)
+data.to_csv("../data/processed_dataset.csv", index=False)
 
 print("processed_dataset.csv saved")
