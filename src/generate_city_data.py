@@ -43,6 +43,6 @@ data = pd.DataFrame({
     "facilities": facilities
 })
 
-data.to_csv("city_dataset.csv", index=False)
+data.to_csv("../data/city_dataset.csv", index=False)
 
 print("Dataset saved as city_dataset.csv")
